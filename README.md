@@ -28,7 +28,7 @@ brew install --cask kitty
 
 ```bash
 # Clone the repository
-git clone https://github.com/YOUR_USERNAME/dotfiles.git ~/dotfiles
+git clone https://github.com/kayossouza/dotfiles.git ~/dotfiles
 
 # Run the installer
 cd ~/dotfiles
@@ -80,11 +80,6 @@ Smart aliases for:
 - Secrets are kept in `~/.zsh_secrets` (not tracked)
 - Plugins are installed in `~/.zsh/`
 - Configurations use symlinks to this repo
-
-## Inspiration
-
-- [Yagasaki7K](https://github.com/Yagasaki7K) - For the clean zsh setup
-- [Miyamoto Musashi](https://en.wikipedia.org/wiki/Miyamoto_Musashi) - For the wisdom
 
 ---
 
