@@ -1,0 +1,50 @@
+# ============================================================================
+# DOTFILES GITIGNORE
+# ============================================================================
+# "Know the smallest things and the biggest things, the shallowest things
+#  and the deepest things." - Miyamoto Musashi
+# ============================================================================
+
+# Secrets - NEVER commit these
+.zsh_secrets
+*_secrets
+*.key
+*.pem
+.env
+.env.local
+
+# Local overrides
+*.local
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Backup files
+*.backup
+*.bak
+*.old
+
+# Zsh plugin directories (users install these themselves)
+.zsh/zsh-autosuggestions/
+.zsh/zsh-syntax-highlighting/
+.zsh/zsh-history-substring-search/
+
+# History files
+.zsh_history
+.bash_history
+
+# Cache
+.cache/
+*.cache
+
+# ----------------------------------------------------------------------------
+# "Do nothing which is of no use." - Miyamoto Musashi
+# ----------------------------------------------------------------------------

@@ -1,0 +1,131 @@
+# ============================================================================
+# STARSHIP PROMPT CONFIGURATION
+# ============================================================================
+# "You can only fight the way you practice." - Miyamoto Musashi
+# ============================================================================
+
+format = """
+[┌─](bold green)$username\
+$hostname\
+$directory\
+$git_branch\
+$git_status\
+$nodejs\
+$rust\
+$golang\
+$python\
+$cmd_duration
+[└─>](bold green) """
+
+# ----------------------------------------------------------------------------
+# PROMPT CHARACTER
+# ----------------------------------------------------------------------------
+# "There is nothing outside of yourself." - Miyamoto Musashi
+
+[character]
+success_symbol = "[➜](bold green)"
+error_symbol = "[✗](bold red)"
+
+# ----------------------------------------------------------------------------
+# DIRECTORY
+# ----------------------------------------------------------------------------
+# "Step by step walk the thousand-mile road." - Miyamoto Musashi
+
+[directory]
+style = "bold cyan"
+truncation_length = 3
+truncate_to_repo = true
+format = "[$path]($style)[$read_only]($read_only_style) "
+
+# ----------------------------------------------------------------------------
+# GIT BRANCH
+# ----------------------------------------------------------------------------
+# "Fixation is the way to death. Fluidity is the way to life." - Miyamoto Musashi
+
+[git_branch]
+symbol = " "
+style = "bold purple"
+format = "on [$symbol$branch]($style) "
+
+# ----------------------------------------------------------------------------
+# GIT STATUS
+# ----------------------------------------------------------------------------
+# "Think lightly of yourself and deeply of the world." - Miyamoto Musashi
+
+[git_status]
+style = "bold red"
+format = "([$all_status$ahead_behind]($style) )"
+conflicted = "⚔️ "
+ahead = "⬆️ ${count}"
+behind = "⬇️ ${count}"
+diverged = "🔀 ⬆️ ${ahead_count}⬇️ ${behind_count}"
+untracked = "🆕 ${count}"
+stashed = "📦 "
+modified = "📝 ${count}"
+staged = "✅ ${count}"
+renamed = "📛 ${count}"
+deleted = "🗑️ ${count}"
+
+# ----------------------------------------------------------------------------
+# COMMAND DURATION
+# ----------------------------------------------------------------------------
+# "Timing in strategy cannot be mastered without a great deal of practice." - Miyamoto Musashi
+
+[cmd_duration]
+min_time = 500
+format = "took [$duration](bold yellow) "
+
+# ----------------------------------------------------------------------------
+# LANGUAGES
+# ----------------------------------------------------------------------------
+# "Know the smallest things and the biggest things." - Miyamoto Musashi
+
+[nodejs]
+symbol = " "
+style = "bold green"
+format = "via [$symbol($version )]($style)"
+
+[python]
+symbol = " "
+style = "bold yellow"
+format = "via [$symbol($version )]($style)"
+
+[rust]
+symbol = " "
+style = "bold orange"
+format = "via [$symbol($version )]($style)"
+
+[golang]
+symbol = " "
+style = "bold cyan"
+format = "via [$symbol($version )]($style)"
+
+# ----------------------------------------------------------------------------
+# TIME
+# ----------------------------------------------------------------------------
+# "There is timing in everything." - Miyamoto Musashi
+
+[time]
+disabled = false
+format = "at [$time](bold white) "
+time_format = "%T"
+
+# ----------------------------------------------------------------------------
+# USERNAME & HOSTNAME
+# ----------------------------------------------------------------------------
+# "It is difficult to realize the true Way just through sword-fencing." - Miyamoto Musashi
+
+[username]
+style_user = "bold blue"
+style_root = "bold red"
+format = "[$user]($style) "
+show_always = false
+
+[hostname]
+ssh_only = true
+format = "on [$hostname](bold yellow) "
+
+# ----------------------------------------------------------------------------
+# ============================================================================
+# "All things entail rising and falling timing. You must be able to discern this." - Miyamoto Musashi
+# ============================================================================
